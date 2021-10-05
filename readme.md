@@ -2,7 +2,7 @@
 
 
 
-编译静态库
+编译C静态库
 ```bash
 gcc -c sum.c          // produces a sum.o object file
 ar -rc libsum.a sum.o //生产静态库
