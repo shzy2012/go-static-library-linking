@@ -4,6 +4,7 @@
 
 编译C静态库
 ```bash
+cd static_libraries
 gcc -c sum.c          // produces a sum.o object file
 ar -rc libsum.a sum.o //生产静态库
 nm libsum.a           //验证
@@ -20,5 +21,9 @@ import "C"
 测试
 ```bash
 go run main.go
-go build
+
+# 编译
+go build 
+    or 
+go build -a -ldflags '-extldflags "-static"' .
 ```
