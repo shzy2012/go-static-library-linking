@@ -23,7 +23,5 @@ import "C"
 go run main.go
 
 # 编译
-go build 
-    or 
-go build -a -ldflags '-extldflags "-static"' .
+go build
 ```
